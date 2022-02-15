@@ -45,7 +45,7 @@ class _SignInState extends State<SignIn> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Login',
               style: TextStyle(
                   fontSize: 35,
@@ -63,7 +63,7 @@ class _SignInState extends State<SignIn> {
                       child: TextFormField(
                         controller: emailController,
                         keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           hintText: 'Email',
                           labelText: 'Email',
                           prefixIcon: Icon(Icons.email),
@@ -79,7 +79,7 @@ class _SignInState extends State<SignIn> {
                         },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Padding(
@@ -88,7 +88,7 @@ class _SignInState extends State<SignIn> {
                         controller: passwordController,
                         keyboardType: TextInputType.visiblePassword,
                         obscureText: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                             hintText: 'Password',
                             labelText: 'Password',
                             prefixIcon: Icon(Icons.password),
@@ -103,7 +103,7 @@ class _SignInState extends State<SignIn> {
                         },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Padding(
@@ -131,7 +131,7 @@ class _SignInState extends State<SignIn> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomeScreen(),
+                                    builder: (context) => const HomeScreen(),
                                   ),
                                 );
                               }
